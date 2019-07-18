@@ -1,0 +1,144 @@
+/*============General=============*/
+body{
+    background: #fff;
+    color: #666666;
+    font-family: "Open Sans", sans-serif;
+}
+a{
+    color: #0e3658;
+    transition: 0.5s;
+}
+a:hover, a:active, a:focus {
+    color: #0e3658;
+    outline: none;
+    text-decoration: none;
+}
+p{
+    padding: 0;
+    margin: 0 0 30px 0;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    margin: 0 0 20px 0;
+    padding: 0;
+}
+/*============Preloader=============*/
+#preloader{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    overflow: visible;
+    background: #fff url("../Image/preloader.svg") no-repeat center center;
+}
+/*============Back to top=============*/
+.back-to-top {
+    position: fixed;
+    display: none;
+    background: rgba(0, 0, 0, 0.2);
+    color: #fff;
+    padding: 6px 12px 9px 12px;
+    font-size: 16px;
+    border-radius: 2px;
+    right: 15px;
+    bottom: 15px;
+    transition: background 0.5s;
+}
+.back-to-top:focus {
+    background: rgba(0, 0, 0, 0.2);
+    color: #fff;
+    outline: none;
+}
+.back-to-top:hover {
+    background: #03C4EB;
+    color: #fff;
+}
+/*============Main Section=============*/
+#main-section{
+    display: table;
+    width: 100%;
+    height: 100vh;
+    background: url("../Image/background_1.jpg.jpg") top center;
+    background-size: cover;
+}
+@media (min-width: 1024px) {
+    #main-section {
+        background-attachment: fixed;
+    }
+}
+#main-section .main-section-logo {
+    margin: 25px;
+}
+#main-section .main-section-logo img{
+    max-width: 25%;
+}
+@media (max-width: 992px) {
+    #main-section .main-section-logo img{
+        max-width: 55%;
+    }
+}
+#main-section .main-section-container {
+    background: rgba(6,25,61,0.3);
+    display: table-cell;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    vertical-align: middle;
+}
+#main-section h1 {
+    margin: 30px 0 20px 0;
+    font-weight: 700;
+    line-height: 48px;
+    text-transform: uppercase;
+    color: #fff;
+}
+@media (max-width: 992px) {
+    #main-section h1 {
+        font-size: 30px;
+        line-height: 36px;
+    }
+}
+#hero h2 {
+    color: #999;
+    margin-bottom: 50px;
+}
+@media (max-width: 992px) {
+    #main-section h2 {
+        font-size: 24px;
+        line-height: 26px;
+        margin-bottom: 30px;
+    }
+    #main-section h2 .rotating {
+        display: block;
+    }
+}
+#main-section .rotating > .animated {
+    display: inline-block;
+}
+#main-section .actions a {
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 8px 20px;
+    border-radius: 2px;
+    transition: 0.5s;
+    margin: 10px;
+}
+#main-section .btn-get-started {
+    background: #03C4EB;
+    border: 2px solid #03C4EB;
+    color: #fff;
+}
+#main-section .btn-get-started:hover {
+    background: none;
+    border: 2px solid #fff;
+    color: #fff;
+}
+/*============Navbar Section=============*/
+
